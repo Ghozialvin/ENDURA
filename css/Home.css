@@ -179,7 +179,6 @@ body{
 }
 .program .row .program-img img{
   width: 90%;
-  border-radius: 50%;
 }
 .program .row .content{
   flex: 1 2 55rem;
@@ -419,7 +418,6 @@ footer .credit span {
     margin: 50px 100px 50px 100px;
     object-fit: cover;
     object-position: center;
-
   }  
   .program .row .content{
     padding-bottom: 15rem;
@@ -433,7 +431,6 @@ footer .credit span {
 @media(max-width:450px){
   html{
     font-size: 50%;
-
   }
   .program h1{
     text-align: center;
