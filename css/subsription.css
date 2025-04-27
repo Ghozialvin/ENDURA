@@ -1,0 +1,288 @@
+:root{
+    --primary:#EC0003;
+    --bg:#efefef;
+    --blck:#1E1E1E;
+    --tx:#FFA955;
+    --animate-delay: 0.4s;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+  
+body{
+    font-family: 'Inter',sans-serif;
+    background-color: var(--bg);
+    /* height: 2000px; */
+}
+  
+/* Navbar */
+.navbar{
+    top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 1.4rem 8.5%;
+    background-color:var(--primary);
+    border-bottom: 1px solid rgba(30, 30, 30, 0.7);
+    position:fixed;
+    height: 7rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+/* .navbar .navbar-img{
+    width: 50px;
+    border-radius: 50%;
+} */
+.navbar .navbar-logo {
+    font-family: 'Chakra Petch',sans-serif;
+    color: var(--bg);
+    margin-right: 38rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.navbar .navbar-menu{
+    display: flex;  
+}
+.navbar .navbar-menu li{
+    list-style: none;
+    padding: 0.5rem 1%;
+}
+.navbar .navbar-menu a{
+    padding: 3rem 5.5px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--bg);
+    font-size: 1.5rem;
+    margin:0 1rem;
+}
+.navbar .navbar-menu .dropdown{
+    display: none;
+}
+.navbar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    padding-bottom: 30px;
+    background-color: var(--tx);
+}
+.navbar .navbar-menu li:hover{
+    background-color: var(--tx);
+}
+.navbar .navbar-menu a:hover{
+    color: var(--blck);
+}
+.navbar .navbar-menu a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5;
+    border-bottom: 0.1rem solid var(--blck);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.navbar .navbar-menu a:hover::after{
+    transform: scaleX(0.4);
+}
+
+/* Section One */
+.program{
+    padding: 10rem 15% 10rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/subs.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.program::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(231, 230, 230, 0.974)8%, rgba(87, 86, 86, 0)25%);
+    display: block;
+}
+.program h1{
+    font-family: 'Chakra Petch',sans-serif;
+    text-align: center;
+    padding-bottom: 10rem;
+    font-weight: 800;
+    font-size: 5.5em;
+    color: var(--primary);
+    --animate-delay: 0.3s;
+    text-shadow: 3px 3px 4px rgba(64, 4, 5, 0.5);
+    /* mix-blend-mode: difference; */
+}
+/* .program .row{
+    display: flex;
+    flex: 10 10 85rem;
+}
+.program .row .program-intro p{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    mix-blend-mode: difference;
+    line-height: 1.6;
+    margin-top: 2rem;
+    color: var(--tx);
+} */
+
+/* Payment */
+.payment{
+    padding: 2rem 7% 1.4rem;
+}
+.payment h1{
+    font-family: 'Chakra Petch',sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--primary);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.payment h1 span{
+    color: var(--tx);
+}
+.payment p{
+    font-family:'Poppins',sans-serif;
+    color: var(--primary);
+    font-weight: 500;
+    text-align: center;
+    max-width: 50rem;
+    margin: auto;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.payment .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+.payment .payment-card{
+    width: 350px;
+    height: 350px;
+    background-color: var(--tx);
+    text-align: center;
+    border-radius: 1.5rem;  
+    border: 0.3rem solid var(--primary);
+    box-sizing: border-box;
+    padding: 1rem 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.payment-card:hover {
+    transform: scale(1.05); /* Membesar 5% saat hover */
+    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal */
+}
+
+  /* .about .row .person-card p{
+    margin-right: 80rem;
+  
+  } */
+.payment .payment-card img{
+    margin: 0.5rem 1.5%;
+    width: 17rem;
+    border-radius: 2rem;
+}
+.payment .payment-card h3 {
+    font-family: 'Chakra Petch',sans-serif;
+    font-style: italic;
+    color: var(--primary);
+    margin:0.5rem 1%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.payment .payment-card p {
+    color: var(--blck);
+    margin:1.5rem;
+}
+.payment  .row .payment-icon a{
+    color: var(--primary);
+    padding: 1.5rem 2.2%;
+    align-items: center;
+    justify-content: space-between;
+}
+.payment  .row .payment-icon a:hover{
+    color: var(--blck);
+}
+.payment-button {
+    background-color: var(--primary);
+    color: var(--bg);
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.payment-button:hover {
+    background-color: #45a049;
+    color: var(--blck); 
+}
+
+/* Footer */
+footer{
+    background-color: var(--tx);
+    text-align: center;
+    padding: 2rem 0 2rem;
+    margin-top: 2.2rem;
+  }
+  footer .credit {
+    /* font-family: 'Inter',sans-serif; */
+    font-size: 1.3rem;
+  }  
+  footer .credit p{
+    color: var(--bg);
+    font-family: 'Popins',sans-serif;
+  }
+  footer .credit a {
+    font-family: 'Chakra Petch',sans-serif;
+    color: var(--blck);
+    font-weight: 700;
+  }
+  footer .credit span {
+    font-family: 'Chakra Petch',sans-serif;
+    color: var(--primary);
+    font-weight: 800;
+  }
+  
+
+/* Media Queries*/
+
+/* Laptop */
+@media(max-width:1366px){
+    html{
+      font-size: 85%;
+    }
+}
+
+/* Tablet */
+@media(max-width:758px){
+  html{
+    font-size: 65%;
+  }
+}
+/* Mobile Phone */
+@media(max-width:450px){
+  html{
+    font-size: 50%;
+  }
+}
