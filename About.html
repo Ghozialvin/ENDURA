@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ENDURA Program</title>
@@ -17,11 +17,14 @@
     
         <!-- Style -->
         <link rel="stylesheet" href="css/about.css">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
 <body>
        <!-- Top Menu Navigation -->
-       <nav class="navbar">
-        <img src="img/Frame 1071.png" alt="ENDURA_LOGO" class="navbar-img">
+       <nav class="navbar animate__animated animate__fadeInDown">
+        <img src="img/Frame 1070.png" alt="ENDURA_LOGO" class="navbar-img">
         <a href="Program.html" class="navbar-logo">ENDURA</a>
         
         <!-- <div class="menu"> -->
@@ -54,7 +57,7 @@
 
    <!-- Section One -->
    <section class="program">
-       <h1>ABOUT ENDURA</h1>
+       <h1 class="animate__animated animate__fadeInUp animate__delay-1s">ABOUT ENDURA</h1>
 
        <!-- <di class="row">
            <div class="program-intro">
@@ -65,16 +68,23 @@
     <!-- Section One End -->
 
     <!-- Section Two -->
-     <section class="program-two">
-        <h1>Endura <span>History</span></h1>
+     <section class="program-two" data-aos-anchor-placement="bottom-bottom">
+        <h1 data-aos="zoom-in" data-aos-duration="1000">Endura <span>History</span></h1>
 
         <div class="row">
-            <div class="program-img">
+            <div class="program-img" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="300">
                 <img src="img/Frame 1069.png" alt="Endura">
             </div>
             <div class="content">
-                <h3>Endura Story </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempore blanditiis facere corporis, sit nulla totam id maxime labore, mollitia laudantium culpa quasi sint non vel voluptatibus odit eligendi enim.</p>
+                <h3 data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="500">Built on Passion, Powered by Innovation</h3>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Endura is here, we believe that every journey to true fitness begins with a single determined step. But we also understand the challenges that many people face, training without proper guidance, incorrect technique, the risk of injury looming, to the anxiety that discourages.<p>
+                <p data-aos="fade-up" data-aos-duration="1000" >That's why Endura is here, combining the power of the human spirit with the sophistication of technology. 
+                    With our AI-based system, every movement you take is guided, every posture is corrected, and every exercise becomes safer and more effective. We don't just build strong bodies, but also strong minds helping you push your limits, overcome fears, and achieve extraordinary results.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000" >
+                    Endura is not just a workout.
+                    It's an intelligent journey to a healthier body, a stronger mind, and a brighter future.
+                </p>
                 <!-- <a href="FeatureCore.html" class="cta">Get Started</a> -->
             </div>
         </div>
@@ -88,5 +98,11 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
