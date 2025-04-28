@@ -56,16 +56,22 @@ body{
   color:var(--blck);
   display: inline-block;
   font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
-  font-size: 1.2rem;
-  padding: 0.8rem 2rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 1.2rem;
   margin: 0 1.5rem;
   background-color: var(--primary);
   border-radius: 1rem;
   box-shadow: 1px 1px 3px rgba(236, 0, 3, 0.6);
   opacity: 0.8;
 }
+.navbar .navbar-account .cta .icon{
+  font-size: 1rem;
+}
 .navbar .navbar-account .cta:hover{
+  box-shadow: 2px 2px 3px rgba(233, 216, 217, 0.7);
   background-color: var(--tx);
   color: var(--blck);
  } 
@@ -231,7 +237,7 @@ body{
 .features .content p{
   font-family: 'Inter',sans-serif;
   text-align: justify;
-  color: var(--bg);
+  color: var(--primary);
   font-weight: 600;
   margin: 2rem auto;
   padding-left: 1.4rem 7%;  

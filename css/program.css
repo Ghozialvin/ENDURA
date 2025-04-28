@@ -43,6 +43,7 @@ body{
 } */
 .navbar .navbar-logo {
     font-family: 'Chakra Petch',sans-serif;
+    display: flex;
     color: var(--bg);
     margin-right: 38rem;
     font-size: 3rem;
@@ -113,6 +114,8 @@ body{
 }
 .program h1{
     font-family: 'Chakra Petch',sans-serif;
+    display: flex;
+    flex-wrap: wrap;
     font-weight: 800;
     text-align: center;
     font-size: 5.5em;
@@ -168,6 +171,8 @@ body{
     padding: 0 1rem;
 }
 .program-two .row .content h3{
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Chakra Petch',sans-serif;
     font-size: 2.5rem;
     margin-top: 2rem;
@@ -175,6 +180,8 @@ body{
     color: var(--primary);
 }
 .program-two .row .content p{
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Inter',sans-serif;
     text-align: justify;
     color: var(--blck);
