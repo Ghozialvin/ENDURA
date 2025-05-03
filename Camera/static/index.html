@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Push Up Counter - ENDURA</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='Push-Up.css') }}">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="{{ url_for('static', filename='img/Frame1071.png') }}" alt="ENDURA_LOGO" class="navbar-img">
+    <a href="{{ url_for('feature_core') }}" class="navbar-logo">ENDURA</a>
+    <div class="menu">
+      <a href="{{ url_for('feature_core') }}" class="cta">Back</a>
+    </div>
+  </nav>
+
+  <!-- Push Up Feature -->
+  <div class="container">
+    <div class="push-up">
+      <h1>Push Up Feature</h1>
+    </div>
+
+    <div class="video-container">
+      <canvas id="output" width="640" height="480"></canvas>
+      <div class="overlay">
+        <div class="counter">0</div>
+        <div class="feedback">Fix Form</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="cameraButton" onclick="toggleCamera()">Start Now</button>
+      <button id="resetButton" onclick="resetCounter()">Reset</button>
+    </div>
+
+    <div id="error-message" class="error-message"></div>
+    <div id="debug-info" class="debug-info"></div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    let count = 0;
+    let feedback = "Fix Form";
+    let progress = 0;
+    let isDown = false;
+    let prevY = null;
+    let thresholdDown = 200; // posisi rendah
+    let thresholdUp = 100;   // posisi naik
+    let ctx = document.getElementById('output').getContext('2d');
+    let stream = null;
+    let interval = null;
+
+    function updateUI() {
+      document.querySelector('.counter').textContent = count;
+      document.querySelector('.feedback').textContent = feedback;
+      document.querySelector('.progress').style.height = `${progress}%`;
+    }
+
+    function resetCounter() {
+      count = 0;
+      progress = 0;
+      isDown = false;
+      updateUI();
+    }
+
+    async function startCamera() {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const video = document.createElement('video');
+        video.srcObject = stream;
+        video.play();
+
+        interval = setInterval(() => {
+          ctx.drawImage(video, 0, 0, 640, 480);
+
+          // Simulasi pengambilan titik tengah orang (di real-case, ini ganti pakai pose estimation)
+          let y = Math.random() * 300 + 100; // Ganti dengan deteksi nyata
+
+          if (prevY !== null) {
+            if (!isDown && y > thresholdDown) {
+              isDown = true;
+              feedback = "Go Up!";
+            } else if (isDown && y < thresholdUp) {
+              isDown = false;
+              count++;
+              feedback = "Good Form!";
+            }
+          }
+          prevY = y;
+
+          progress = Math.min(100, (count % 10) * 10); // progress per 10 push up
+          updateUI();
+        }, 100);
+      } catch (error) {
+        console.error('Camera error:', error);
+        document.getElementById('error-message').textContent = "Failed to access camera: " + error.message;
+      }
+    }
+
+    function stopCamera() {
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+      if (interval) {
+        clearInterval(interval);
+      }
+      stream = null;
+      interval = null;
+    }
+
+    function toggleCamera() {
+      const button = document.getElementById('cameraButton');
+      if (!stream) {
+        button.textContent = "Stop Now";
+        startCamera();
+      } else {
+        button.textContent = "Start Now";
+        stopCamera();
+      }
+    }
+  </script>
+
+</body>
+</html>

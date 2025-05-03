@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ENDURA FEATURES CORE - Push-Up Counter</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="..static/Push-Up.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="../static/Frame 1070.png" alt="ENDURA_LOGO" class="navbar-img">
+    <a href="Program.html" class="navbar-logo">ENDURA</a>
+    <div class="menu">
+      <link rel="stylesheet" href="{{ url_for('static', filename='Push-Up.css') }}">
+    </div>
+  </nav>
+
+  <!-- Push-Up Feature Section -->
+  <div class="push-up" style="text-align: center;">
+    <h1>Push-Up Feature</h1>
+    <!-- Tombol Start/Stop -->
+    <button id="cameraButton" onclick="toggleCamera()">Start Now</button>
+  </div>
+
+  <!-- Video Live dari Python Flask -->
+  <div style="text-align: center; margin-top: 20px;">
+    <img id="videoFeed" src="{{ url_for('video_feed') }}" width="720" height="480" style="display: none;">
+  </div>
+
+  <!-- Script -->
+  <script>
+    let isCameraOn = false; // Status kamera
+
+    function toggleCamera() {
+      const videoFeed = document.getElementById('videoFeed');
+      const button = document.getElementById('cameraButton');
+
+      if (!isCameraOn) {
+        // Menampilkan video dari Flask
+        videoFeed.style.display = 'block';
+        button.textContent = 'Stop Now';
+        isCameraOn = true;
+      } else {
+        // Menghentikan/menghilangkan video
+        videoFeed.style.display = 'none';
+        button.textContent = 'Start Now';
+        isCameraOn = false;
+      }
+    }
+  </script>
+</body>
+</html>

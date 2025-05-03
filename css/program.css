@@ -49,14 +49,14 @@ body{
     font-size: 3rem;
     font-weight: 800;
 }
-.navbar .navbar-menu{
+.navbar .navbar-nav{
     display: flex;  
 }
 .navbar .navbar-menu li{
     list-style: none;
     padding: 0.5rem 1%;
 }
-.navbar .navbar-menu a{
+.navbar .navbar-nav a{
     padding: 3rem 5.5px;
     font-family: 'Poppins', sans-serif;
     color: var(--bg);

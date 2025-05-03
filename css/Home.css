@@ -62,17 +62,17 @@ body{
   font-size: 1.6rem;
   padding: 0.5rem 1.2rem;
   margin: 0 1.5rem;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   border-radius: 1rem;
-  box-shadow: 1px 1px 3px rgba(236, 0, 3, 0.6);
+  /* box-shadow: 1px 1px 3px rgba(236, 0, 3, 0.6); */
   opacity: 0.8;
 }
 .navbar .navbar-account .cta .icon{
   font-size: 1rem;
 }
 .navbar .navbar-account .cta:hover{
-  box-shadow: 2px 2px 3px rgba(233, 216, 217, 0.7);
-  background-color: var(--tx);
+  /* box-shadow: 2px 2px 3px rgba(233, 216, 217, 0.7); */
+  background-color: var(--primary);
   color: var(--blck);
  } 
 /* .navbar .navbar-account .cta::after{
@@ -137,7 +137,7 @@ body{
   font-size: 1.6rem;
   margin-top: 1.5rem;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   /* mix-blend-mode: difference; */
 }
 .onepages .content .cta,
@@ -238,7 +238,7 @@ body{
   font-family: 'Inter',sans-serif;
   text-align: justify;
   color: var(--primary);
-  font-weight: 600;
+  font-weight: 500;
   margin: 2rem auto;
   padding-left: 1.4rem 7%;  
   font-size: 2.2rem;
@@ -442,6 +442,10 @@ footer .credit span {
     text-align: center;
     /* padding: 45rem 10%; */
   }
+  /* .program .row .content{ 
+    padding-bottom: 5rem;
+    font-size: 5rem;
+  } */
   .about .person-card{
     border-radius: 5rem;
     /* padding: 14%; */
