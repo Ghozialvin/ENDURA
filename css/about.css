@@ -23,11 +23,10 @@ body{
   
 /* Navbar */
 .navbar{
-    top: 6rem;
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    padding: 1.4rem 8.5%;
+    padding: 2.5rem 5%;
     background-color:var(--primary);
     border-bottom: 1px solid rgba(30, 30, 30, 0.7);
     position:fixed;
@@ -42,13 +41,50 @@ body{
     border-radius: 50%;
 } */
 .navbar .navbar-logo {
-    margin-right: 38rem;
     font-family: 'Chakra Petch',sans-serif;
+    display: flex;
+    /* margin-right: 38rem; */
     color: var(--bg);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
 }
-.navbar .navbar-menu{
+.navbar .navbar-nav a{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: var(--bg);
+    font-size: 1.5rem;
+    /* padding: 0.5rem; */
+    margin:0 1rem;
+}
+.navbar .navbar-nav a:hover{
+    color: var(--blck);
+    /* background-color: var(--tx); */
+    /* border-radius: 1.9rem; */
+    transition: 0.3s ease-in-out;
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--blck);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+.navbar .navbar-extra a{
+    color: var(--bg);
+    margin: 0 0.5rem;
+}
+#hamburger-menu{
+    display: none;
+}
+.navbar .navbar-nav .log-out i {
+    width: 3rem;
+    height: 3rem;
+}
+/* .navbar .navbar-menu{
     display: flex;  
 }
 .navbar .navbar-menu li{
@@ -87,7 +123,7 @@ body{
 }
 .navbar .navbar-menu a:hover::after{
     transform: scaleX(0.4);
-}
+} */
 
 /* Section One */
 .program{
@@ -306,9 +342,19 @@ footer{
 }
 
 /* Tablet */
-@media(max-width:758px){
+@media(max-width:768px){
   html{
     font-size: 65%;
+  }
+  .program-two .row{
+    flex-wrap: wrap;
+  }
+  .program-two .row .program-img{
+    height: 24rem;
+    margin: 50px 100px 50px 100px;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 15rem;
   }
 }
 /* Mobile Phone */

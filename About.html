@@ -22,19 +22,22 @@
 </head>
 
 <body>
-       <!-- Top Menu Navigation -->
-       <nav class="navbar animate__animated animate__fadeInDown">
-        <img src="img/Frame 1070.png" alt="ENDURA_LOGO" class="navbar-img">
+    <!-- Top Menu Navigation -->
+    <nav class="navbar animate__animated animate__fadeInDown">
+        <!-- <img src="img/Frame 1070.png" alt="ENDURA_LOGO" class="navbar-img"> -->
         <a href="Program.html" class="navbar-logo">ENDURA</a>
         
         <!-- <div class="menu"> -->
-            <!-- <div class="navbar-nav">
-                <a href="#">Program</a>
-                <a href="#">Features</a>
-                <a href="#" id="subscriptions">Subscriptions</a>
-                <a href="#">About</a>
-            </div> -->
-            <ul class="navbar-menu">
+        <div class="navbar-nav">
+        <a href="Program.html">Program</a>
+            <a href="FeatureCore.html">Features</a>
+            <a href="Subscription.html">Subscriptions</a>
+            <a href="About.html">About</a>
+            
+            <a href="Home.html" class="log-out"><i data-feather="log-out"></i></a>
+            <!-- <a href="Home.html" class="cta">Logout</a> -->
+        </div>
+            <!-- <ul class="navbar-menu">
                 <li><a href="Program.html">Program</a></li>
                 <li>
                     <a href="">Features</a>
@@ -46,8 +49,7 @@
                 </li>
                 <li><a href="Subscription.html">Subscriptions</a></li>
                 <li><a href="About.html">About</a></li>
-            </ul>
-        <!-- </div> -->
+            </ul> -->
 
         <!-- <div class="navbar-account">
             <a href="Program.html" class="cta">Login</a>
@@ -99,6 +101,9 @@
     </footer>
     <!-- Footer End -->
 
+    <script>
+        feather.replace();
+    </script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

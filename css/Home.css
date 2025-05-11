@@ -53,7 +53,7 @@ body{
   padding:0.6rem ;
 }
 .navbar .navbar-account .cta{
-  color:var(--blck);
+  color:var(--primary);
   display: inline-block;
   font-family: 'Poppins', sans-serif;
   justify-content: center;
@@ -241,7 +241,7 @@ body{
   font-weight: 500;
   margin: 2rem auto;
   padding-left: 1.4rem 7%;  
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   max-width: 45rem;
   /* mix-blend-mode:difference; */

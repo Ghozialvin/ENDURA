@@ -21,18 +21,25 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 <body>
-       <!-- Top Menu Navigation -->
-       <nav class="navbar animate__animated animate__fadeInDown" >
-            <img src="img/Frame 1070.png" alt="ENDURA_LOGO" class="navbar-img">
-            <a href="Program.html" class="navbar-logo">ENDURA</a>
+    <!-- Top Menu Navigation -->
+    <nav class="navbar animate__animated animate__fadeInDown" >
+        <!-- <img src="img/Frame 1070.png" alt="ENDURA_LOGO" class="navbar-img"> -->
+        <a href="Program.html" class="navbar-logo">ENDURA</a>
         
-        <div class="menu">
-            <div class="navbar-nav">
-                <a href="Program.html">Program</a>
-                <a href="FeatureCore.html">Features</a>
-                <a href="Subscription.html" id="subscriptions">Subscriptions</a>
-                <a href="About.html">About</a>
-            </div>
+        <!-- <div class="menu"> -->
+        <div class="navbar-nav">
+        <a href="Program.html">Program</a>
+            <a href="FeatureCore.html">Features</a>
+            <a href="Subscription.html">Subscriptions</a>
+            <a href="About.html">About</a>
+            
+            <a href="Home.html" class="log-out"><i data-feather="log-out"></i></a>
+            <!-- <a href="Home.html" class="cta">Logout</a> -->
+        </div>
+        
+        <!-- <div class="navbar-extra">
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div> -->
             <!-- <ul class="navbar-menu">
                 <li><a href="Program.html">Program</a></li>
                 <li>
@@ -46,13 +53,9 @@
                 <li><a href="Subscription.html">Subscriptions</a></li>
                 <li><a href="About.html">About</a></li>
             </ul> -->
-        </div>
-
-        <div class="navbar-account">
-            <a href="Program.html" class="cta">Logout</a>
-        </div>
+        <!-- </div> -->
     </nav>
-   <!-- End Menu Navigation -->
+    <!-- End Menu Navigation -->
 
    <!-- Section One -->
    <section class="program">
@@ -95,7 +98,7 @@
             <div class="content">
                 <h3 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" >Description About This</h3>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
-                 >Discover Endura’s core features designed to deliver a personalized, safe, and effective fitness experience. Focusing on core body workouts, Endura helps you strengthen your core muscles like your abs, lower back, and hips—the foundation of your overall balance and strength. With AI-based posture correction technology and real-time tracking, every rep is more precise, safer, and more impactful. Get movement recommendations that are right for your ability, without the risk of injury, anytime, anywhere.</p>
+                 >Discover Endura’s core features designed to deliver a personalized, safe, and effective fitness experience. Focusing on core body workouts, Endura helps you strengthen your core muscles like your abs, lower back, and hips the foundation of your overall balance and strength. With AI-based posture correction technology and real-time tracking, every rep is more precise, safer, and more impactful. Get movement recommendations that are right for your ability, without the risk of injury, anytime, anywhere.</p>
                 <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="800" href="FeatureCore.html" class="cta">Start For Free</a>
             </div>
             <div class="program-img"  data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="300">
@@ -135,6 +138,10 @@
     </footer>
     <!-- Footer End -->
 
+    <script>
+        feather.replace();
+    </script>
+    <script src="Javascript/sidebar.js"></script>      
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

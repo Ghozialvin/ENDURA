@@ -57,7 +57,7 @@ def update_feedback_and_count(elbow, shoulder, hip, direction, count, form):
 
 @app.route('/')
 def index():
-    return render_template('Push-Upz.html')
+    return render_template('Push-Up.html')
 
 @app.route('/video_feed')
 def video_feed():
