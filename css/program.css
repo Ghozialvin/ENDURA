@@ -5,7 +5,6 @@
     --tx:#FFA955;
     --animate-delay: 0.4s;
 }
-  
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +12,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-}
-  
+} 
 body{
     font-family: 'Inter',sans-serif;
     background-color: var(--bg);
@@ -25,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 7%;
+    padding: 1.5rem 7%;
     background-color:var(--primary);
     border-bottom: 1px solid rgba(209, 161, 161, 0.7);
     position:fixed;
@@ -33,7 +31,7 @@ body{
     left: 0;
     right: 0;
     z-index: 9999;
-    /* height: 7rem; */
+    /* height: 15vh; */
 }
 .navbar .navbar-logo {
     font-family: 'Chakra Petch',sans-serif;
@@ -130,7 +128,7 @@ body{
 /* Section Two */
 .program-two{
     background-color: var(--bg);
-    padding: 9rem 15% 5rem;
+    padding: 10rem 15% 5rem;
 }
 .program-two h1{
     font-family: 'Chakra Petch',sans-serif;
@@ -144,6 +142,8 @@ body{
 }
 .program-two .row{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .program-two .row .program-img{
     flex: 1 2 35rem;
@@ -210,6 +210,8 @@ body{
     color: var(--bg);
 }
 .program-three .row {
+    justify-content: center;
+    align-items: center;
     display: flex;
 }
 .program-three .row .program-img {
@@ -339,7 +341,6 @@ footer{
     margin-top: 2.2rem;
 }
 footer .credit {
-  /* font-family: 'Inter',sans-serif; */
     font-size: 1.3rem;
 }  
 footer .credit p{
@@ -371,35 +372,34 @@ footer .credit span {
   html{
     font-size: 65%;
   }
-  #hamburger-menu{
+  /* #hamburger-menu{
     display: inline-block;
   }
- /* .navbar .navbar-nav{
+ .navbar .navbar-nav{
     display: absolute;
     top: 100%;
-    right: -100%;
-    background-color: var(--bg);
-    width: 20rem;
-    height: 100vh;
+    right: -100%; 
+    background-color: var(--bg); 
+    width: 20rem; 
+    height: 100vh; 
     transition: 0.3s ease-in-out;
-  } */
-  /* .navbar .navbar-nav.active{ 
+  }
+  .navbar .navbar-nav.active{ 
     right: 0;
   }
-  .navbar .navbar-nav a{
+  .navbar .navbar-nav a{ 
     color: var(--blck); 
     display: block;
     padding:0.5rem;
     font-size: 2rem;
     margin: 1.5rem;
-    border-bottom: 1px solid var(--primary);
   }
-  .navbar .navbar-nav a::after{
+  .navbar .navbar-nav a::after{ 
     transform-origin: 0 0;
   }
   .navbar .navbar-nav a:hover::after{
-    transform:scaleX(0.2)
-  }  */
+    transform:scaleX(0.35)
+  } */
   .program-two .row,
   .program-three .row,
   .program-four .row{
