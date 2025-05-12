@@ -370,7 +370,7 @@ footer .credit span {
 /* Tablet */
 @media(max-width:768px){
   html{
-    font-size: 65%;
+    font-size: 55%;
   }
   /* #hamburger-menu{
     display: inline-block;
@@ -428,7 +428,7 @@ footer .credit span {
 /* Mobile Phone */
 @media(max-width:450px){
   html{
-    font-size: 50%;
+    font-size: 40%;
   }
   .program-two h1{
     text-align: center;
