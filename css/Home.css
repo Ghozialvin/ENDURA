@@ -413,7 +413,7 @@ footer .credit span {
   }
   .program .row .program-img{
     height: 24rem;
-    margin: 50px 100px 50px 100px;
+    margin: 50px 50px 50px 50px;
     object-fit: cover;
     object-position: center;
   }  
