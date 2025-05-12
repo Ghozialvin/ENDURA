@@ -435,3 +435,13 @@ footer .credit span {
     /* padding: 45rem 10%; */
   }
 }
+
+@media(max-width:350px){
+  html{
+    font-size: 30%;
+  }
+  .program-two h1{
+    text-align: center;
+    /* padding: 45rem 10%; */
+  }
+}
