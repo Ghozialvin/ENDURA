@@ -8,13 +8,16 @@
   --bg1:#efefef;
   --animate-delay: 0.4s;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing:border-box;
   outline: none;
   border: none;
   text-decoration: none;
+  overflow-x: clip;
+  /* overflow-y: hidden; */
+  /* outline: 1px solid blue; */
 }
 body{
   font-family: 'Inter',sans-serif;
@@ -84,7 +87,7 @@ body{
 
 /* One Section */
 .onepages {
-  top: 6rem;
+  top: 6rem;      
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -154,7 +157,6 @@ body{
 /* Second Section */
 .program{
   padding:9rem 15% 5rem;
-  background-color:var(--primary);
 }
 .program h1{
   font-family: 'Chakra Petch',sans-serif;
@@ -334,7 +336,7 @@ body{
 .person-card:hover{
   background-color:var(--primary1);
   transform: scale(1.05);/* Membesar 5% saat hover */
-  box-shadow: 4px 6px 20px rgba(30, 1, 1, 0.817); /* Bayangan lebih tebal */
+  box-shadow: 4px 6px 15px rgba(30, 1, 1, 0.817); /* Bayangan lebih tebal */
 }
 .about .person-card img{
   margin: 0.5rem 1.5%;
@@ -342,7 +344,7 @@ body{
   border-radius: 2rem;
 }
 .about .person-card img:hover{
-  transform: scale(1.1);
+  transform: scale(1.8);
   box-shadow: 10px 10px 20px rgba(69, 66, 66, 0.817);
 }
 .about .person-card h3 {
@@ -401,7 +403,7 @@ footer .credit span {
 }
 
 /* Tablet */
-@media(max-width:758px){
+@media(max-width:768px){
   html{
     font-size: 65%;
   }
