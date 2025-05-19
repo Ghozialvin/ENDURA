@@ -344,7 +344,7 @@ body{
   border-radius: 2rem;
 }
 .about .person-card img:hover{
-  transform: scale(1.8);
+  transform: scale(1.5);
   box-shadow: 10px 10px 20px rgba(69, 66, 66, 0.817);
 }
 .about .person-card h3 {
