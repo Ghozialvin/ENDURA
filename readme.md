@@ -90,6 +90,14 @@ WEBAPP/
 
 ---
 
+## 🌐 Prototipe Halaman Aplikasi
+
+Kamu bisa mencoba versi prototipe halaman aplikasi melalui GitHub Pages:
+
+👉 [Klik di sini untuk membuka prototipe](https://ghozialvin.github.io/ENDURA/Home.html)
+
+---
+
 ## 👥 Tim Pengembang
 
 * Developer AI: M. Arsal Ranjana Utama, Natanael Oktavianus Partahan Sihombing & Ghozi Alvin Karim
